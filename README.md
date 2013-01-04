@@ -1,6 +1,6 @@
 # Finnish keyboard relief for OSX Emacs #
 
-If you want to use alt (option) key as meta and also use Finnish (same problem exists in other european keyboard layouts as well) keyboard layout, it can get quite frustrating. 
+If you want to use alt (option) key as meta and also use Finnish keyboard layout, it can get quite frustrating. Same problem exists in many other european keyboard layouts as well.
 
 You can get a bigger picture of the issue by reading this StackOverflow question and answers:
 
@@ -17,4 +17,6 @@ Here's what I've done:
     (setq mac-right-option-modifier nil)
 
 Not sure what the first line is doing, second and third are self-explanatory and the last line makes your right alt to behave as a normal alt in case your fancy new meta/alt key fails to produce characters in some corner cases.
+
+The file emulate-mac-keyboard-mode.el is borrowed into this repository from the Aquamacs repository (https://github.com/davidswelt/aquamacs-emacs).
 
